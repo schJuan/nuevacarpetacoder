@@ -328,7 +328,10 @@ footer .infocontactos a img{
     width: 70px;
     border-radius: 50%;
 }
+/*contactos*/
 .h1contacto{
-    color: #25D366;
+    color:black;
+    text-align: center;
     font-size: 40px;
+    background-color: rgb(255, 167, 3)
 }
