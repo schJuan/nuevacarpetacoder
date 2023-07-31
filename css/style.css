@@ -334,6 +334,18 @@ footer .infocontactos a img{
     text-align: center;
     background-color:rgba(250, 234, 6, 0.829);
 }
+
+@media(min-widt:768px){
+    .publicidadtarjeta{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+    .card-text{
+        max-height: 10px;
+        overflow: auto;
+    }
+}
 .publicidadtarjeta{
     display: flex;
     justify-content: space-around;
@@ -356,4 +368,8 @@ footer .infocontactos a img{
 .cardpubli:hover{
     width: 300px;
     box-shadow: 5px 5px 20px 5px #000000;
+}
+.col-sm-6{
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: 0.2s;
 }
