@@ -251,7 +251,7 @@ form textarea{
 .carrucel p{
     color: white;
 }
-/*publicidad
+/*
 .publicidad{
     z-index: 1;
     top: 40px;
@@ -328,7 +328,32 @@ footer .infocontactos a img{
     width: 70px;
     border-radius: 50%;
 }
+/* CONTACTOS */
 .h1contacto{
-    color: #25D366;
     font-size: 40px;
+    text-align: center;
+    background-color:rgba(250, 234, 6, 0.829);
+}
+.publicidadtarjeta{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-primary{
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(255, 167, 3);
+    transition: 0.5s;
+}
+.btn-primary:hover{
+    background-color: coral;
+    width: 90px;
+}
+.cardpubli{
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: 0.2s;
+}
+.cardpubli:hover{
+    width: 300px;
+    box-shadow: 5px 5px 20px 5px #000000;
 }
