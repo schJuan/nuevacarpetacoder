@@ -251,13 +251,14 @@ form textarea{
 .carrucel p{
     color: white;
 }
-/*
+
 .publicidad{
     z-index: 1;
     top: 40px;
     position: fixed;
     right: 30px;
     text-align: center;
+    display: none;
 }
 .publicidad h5{
     color: black;
@@ -269,7 +270,7 @@ form textarea{
     width: 300px;
     height: 200px;    
 }
-*/
+
 /*footer*/
 @media(max-width:768px){
     .pieDepagina{
