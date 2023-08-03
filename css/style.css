@@ -28,23 +28,26 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-
-.navegador ul {
+nav .fa-bars {
+  display: none;
+}
+nav ul {
   list-style: none;
   padding: 10px;
   display: flex;
 }
-
-nav ul li a {
+nav ul a {
   color: black;
   text-decoration: none;
   display: block;
   margin: 5px;
   font-size: 20px;
 }
-
-.fa-bars {
-  display: none;
+nav .logo {
+  /*width: 100%;*/
+  height: 70px;
+  object-fit: cover;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 @media (max-width: 768px) {
@@ -75,13 +78,6 @@ nav ul li a {
     left: 0;
   }
 }
-.logo {
-  /*width: 100%;*/
-  height: 70px;
-  object-fit: cover;
-  box-shadow: 5px 5px 15px 5px #000000;
-}
-
 /*tarjeta incio*/
 .inicio {
   display: flex;
@@ -98,40 +94,34 @@ nav ul li a {
   box-shadow: 5px 5px 15px 5px #000000;
   transition: 0.2s;
 }
-
 .tarjeta:hover {
   width: 240px;
   box-shadow: 5px 5px 20px 5px #000000;
 }
-
-.burguer1 {
+.tarjeta .burguer1 {
   width: 100%;
   height: 200px;
   border-radius: 5px;
   background-size: cover;
 }
-
-.burguer2 {
+.tarjeta .burguer2 {
   width: 100%;
   height: 200px;
   border-radius: 5px;
   background-size: cover;
 }
-
-.boton {
+.tarjeta .boton {
   margin: 5px;
   padding: 2px;
   border-radius: 5px;
   background-color: rgb(255, 167, 3);
   transition: 0.5s;
 }
-
-.boton:hover {
+.tarjeta .boton:hover {
   background-color: coral;
   width: 80px;
 }
-
-.boton a {
+.tarjeta .boton a {
   list-style: none;
   text-decoration: none;
   color: black;
@@ -146,8 +136,7 @@ nav ul li a {
   padding: 15px;
   background-color: rgba(250, 234, 6, 0.829);
 }
-
-.tituloPedido2 {
+.tituloPedido .tituloPedido2 {
   font-size: 40px;
   text-align: center;
   padding: 15px;
@@ -181,29 +170,15 @@ footer{
     grid-area: footer;
 }
 */
-table tr th {
-  width: 100%;
-  border: 2px solid;
-  display: grid;
-}
-
-table tr td {
-  width: 100px;
-  border: 2px solid;
-  display: grid;
-}
-
 .formulario input {
   width: 100%;
   padding: 5px;
 }
-
-.formulario label {
+.formulario input label {
   width: 100%;
   padding: 5px;
 }
-
-.formulario textarea {
+.formulario input textarea {
   width: 100%;
   padding: 5px;
 }
@@ -212,19 +187,28 @@ table tr td {
   display: flex;
   grid-template-columns: repeat(2 576px);
 }
+.contenedor .horarios {
+  display: grid;
+  margin: 10px;
+  padding: 15px;
+  border-color: #000000;
+}
+.contenedor .horarios th {
+  width: 100%;
+  border: 2px solid;
+  display: grid;
+}
+.contenedor .horarios td {
+  width: 100px;
+  border: 2px solid;
+  display: grid;
+}
 
 @media (max-width: 438px) {
   .contenedor {
     grid-template-rows: repeat(2 auto);
   }
 }
-.horarios {
-  display: grid;
-  margin: 10px;
-  padding: 15px;
-  border-color: #000000;
-}
-
 .tituloPedido3 {
   font-size: 40px;
   text-align: center;
@@ -237,21 +221,18 @@ form {
   margin: 10px;
   border-radius: 5px;
 }
-
 form button {
   margin: 5px;
   padding: 2px;
   border-radius: 5px;
   background-color: rgb(255, 167, 3);
 }
-
 form input {
   border: 0px;
   border-bottom: 2px solid;
   margin: 10px;
   padding: 2px;
 }
-
 form textarea {
   border: 0px;
   border-bottom: 2px solid;
@@ -263,16 +244,13 @@ form textarea {
   height: 600px;
   padding: 20px;
 }
-
 .carrucel img {
   height: 550px;
   background-size: cover;
 }
-
 .carrucel h5 {
   color: white;
 }
-
 .carrucel p {
   color: white;
 }
@@ -285,15 +263,12 @@ form textarea {
   text-align: center;
   display: none;
 }
-
 .publicidad h5 {
   color: black;
 }
-
 .publicidad p {
   color: black;
 }
-
 .publicidad img {
   width: 300px;
   height: 200px;
@@ -354,7 +329,6 @@ footer .infocontactos a img {
   right: 30px;
   box-shadow: 18px 5px 23px 9px #000000;
 }
-
 .whatsapp img {
   width: 70px;
   border-radius: 50%;
