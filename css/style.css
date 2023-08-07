@@ -263,7 +263,9 @@ form textarea {
   color: white;
 }
 
-
+.publicidad{
+  display: none;
+}
 @media (max-width: 270px) {
   .publicidad{
     display: none;
