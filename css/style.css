@@ -16,6 +16,14 @@
   background-color: rgba(250, 234, 6, 0.829);
   box-shadow: 5px 5px 15px 5px #000000;
 }
+@media (max-width: 270px){
+  .titulo h1{
+    display: none;
+  }
+  .titulo h2{
+    display: none;
+  }
+}
 
 .titulo h2 {
   font-size: 40px;
@@ -255,13 +263,11 @@ form textarea {
   color: white;
 }
 
-.publicidad {
-  z-index: 1;
-  top: 40px;
-  position: fixed;
-  right: 30px;
-  text-align: center;
-  display: none;
+
+@media (max-width: 270px) {
+  .publicidad{
+    display: none;
+  }
 }
 .publicidad h5 {
   color: black;
