@@ -36,6 +36,12 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+nav .logo {
+  /*width: 100%;*/
+  height: 70px;
+  object-fit: cover;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
 
 .fa-bars {
   display: none;
@@ -46,20 +52,12 @@ nav ul {
   padding: 10px;
   display: flex;
 }
-
 nav ul a {
   color: black;
   text-decoration: none;
   display: block;
   margin: 5px;
   font-size: 20px;
-}
-
-.logo {
-  /*width: 100%;*/
-  height: 70px;
-  object-fit: cover;
-  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 @media (max-width: 768px) {
@@ -375,15 +373,9 @@ footer .infocontactos a img {
   background-color: rgb(255, 167, 3);
   transition: 0.5s;
 }
-
 .btn-primary:hover {
   background-color: coral;
   width: 90px;
-}
-
-.cardpubli {
-  box-shadow: 5px 5px 15px 5px #000000;
-  transition: 0.2s;
 }
 
 .cardpubli:hover {
@@ -391,9 +383,17 @@ footer .infocontactos a img {
   box-shadow: 5px 5px 20px 5px #000000;
 }
 
-.col-sm-6 {
-  box-shadow: 5px 5px 15px 5px #000000;
-  transition: 0.2s;
+.personal .row {
+  margin: 5px;
+}
+.personal .row:hover {
+  box-shadow: 5px 5px 20px 5px #000000;
+}
+.personal .card {
+  margin: 5px;
+}
+.personal .card:hover {
+  box-shadow: 5px 5px 20px 5px #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
