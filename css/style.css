@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-/* header y nav*/
+/* -----header y nav----*/
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -88,7 +88,8 @@ nav ul a {
     left: 0;
   }
 }
-/*tarjeta incio*/
+/*------ fin -----*/
+/* ------- tarjeta incio-----*/
 .inicio {
   display: flex;
   flex-wrap: wrap;
@@ -137,19 +138,26 @@ nav ul a {
   color: black;
 }
 
-/* finn*/
-/* tarjeta pedidos*/
+/*----- finn -------*/
+/* --------------- tarjeta pedidos ------------*/
 .tituloPedido {
   color: chocolate;
-  font-size: 60px;
+  font-size: 70px;
   text-align: center;
   padding: 15px;
   background-color: rgba(250, 234, 6, 0.829);
 }
-.tituloPedido .tituloPedido2 {
-  font-size: 40px;
+
+.tituloPedido2 {
+  font-size: 50px;
   text-align: center;
-  padding: 15px;
+  background-color: rgba(250, 234, 6, 0.829);
+}
+
+.tituloPedido3 {
+  text-align: center;
+  background-color: #e89b02;
+  font-size: 20px;
 }
 
 /*
@@ -194,29 +202,40 @@ footer{
 }
 
 .contenedor {
-  display: flex;
   grid-template-columns: repeat(2 576px);
 }
 .contenedor .horarios {
-  display: grid;
   margin: 10px;
   padding: 15px;
   border-color: #000000;
 }
 .contenedor .horarios th {
-  width: 100%;
+  width: 100px;
   border: 2px solid;
-  display: grid;
 }
 .contenedor .horarios td {
   width: 100px;
   border: 2px solid;
-  display: grid;
 }
 
-@media (max-width: 438px) {
+@media (max-width: 600px) {
+  .mapa {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 452px) {
+  .tituloPedido {
+    font-size: 40px;
+  }
+  .tituloPedido2 {
+    font-size: 30px;
+  }
+  .tituloPedido3 {
+    font-size: 5px;
+  }
   .contenedor {
-    grid-template-rows: repeat(2 auto);
+    overflow: scroll;
   }
 }
 .tituloPedido3 {
@@ -283,7 +302,7 @@ form textarea {
   height: 200px;
 }
 
-/*footer*/
+/* -------------footer ---------------*/
 @media (max-width: 768px) {
   .pieDepagina {
     grid-template-columns: 1fr 1fr;
@@ -343,7 +362,8 @@ footer .infocontactos a img {
   border-radius: 50%;
 }
 
-/* CONTACTOS */
+/* ------- fin ----- */
+/* ----CONTACTOS---- */
 .h1contacto {
   font-size: 40px;
   text-align: center;
@@ -395,5 +415,7 @@ footer .infocontactos a img {
 .personal .card:hover {
   box-shadow: 5px 5px 20px 5px #000000;
 }
+
+/* ------- fin ----------*/
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 @import "variables";
 @import "publicidad";
 @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300;900 & display=swap');
-/* header y nav*/
+/* -----header y nav----*/
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -81,10 +81,11 @@ nav ul {
         left: 0;
     }
 }
+/*------ fin -----*/
 
 
 
-/*tarjeta incio*/
+/* ------- tarjeta incio-----*/
 .inicio{
     display: flex;
     flex-wrap: wrap;
@@ -131,20 +132,26 @@ nav ul {
         }
        }
 }
-/* finn*/
+/*----- finn -------*/
 
-/* tarjeta pedidos*/
+/* --------------- tarjeta pedidos ------------*/
 .tituloPedido{
     color: chocolate;
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     padding: 15px;
     background-color:rgba(250, 234, 6, 0.829);
-    .tituloPedido2{
-        font-size: 40px;
-        text-align: center;
-        padding: 15px;
-    }
+    
+}
+.tituloPedido2{
+    font-size: 50px;
+    text-align: center;   
+    background-color:rgba(250, 234, 6, 0.829);
+}
+.tituloPedido3{
+    text-align: center;
+    background-color: #e89b02;
+    font-size: 20px; 
 }
 /*
 body{
@@ -189,28 +196,39 @@ footer{
 }
  
 .contenedor{
-    display: flex;
     grid-template-columns:repeat(2 576px);
     .horarios{
-        display: grid;
         margin: 10px;
         padding: 15px;
         border-color: #000000;
         th{
-            width: 100%;
+            width: 100px;
             border: 2px solid;
-            display:grid;
         }
         td{
             width: 100px;
             border: 2px solid;
-            display:grid;
         }
     }
 }
-@media(max-width:438px){
-    .contenedor{
-        grid-template-rows: repeat(2 auto);
+@media(max-width:600px){
+    .mapa{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width:452px){
+    .tituloPedido{
+        font-size: 40px;
+    }
+    .tituloPedido2{
+        font-size: 30px;
+    }
+    .tituloPedido3{
+        font-size: 5px;
+    }
+    .contenedor{ 
+        overflow: scroll;
     }
 }
 
@@ -281,7 +299,7 @@ form{
 }
 
 
-/*footer*/
+/* -------------footer ---------------*/
 @media(max-width:768px){
     .pieDepagina{
         grid-template-columns: 1fr 1fr ;
@@ -339,7 +357,8 @@ footer .infocontactos a img{
         border-radius: 50%;
     }
 }
-/* CONTACTOS */
+/* ------- fin ----- */
+/* ----CONTACTOS---- */
 .h1contacto{
     font-size: 40px;
     text-align: center;
@@ -392,3 +411,4 @@ footer .infocontactos a img{
         }
     }
 }
+/* ------- fin ----------*/
