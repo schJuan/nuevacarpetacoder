@@ -238,11 +238,6 @@ footer{
     overflow: scroll;
   }
 }
-.tituloPedido3 {
-  font-size: 40px;
-  text-align: center;
-}
-
 form {
   width: auto;
   border: 2px solid;
@@ -284,8 +279,9 @@ form textarea {
   color: white;
 }
 
+/*--publicidad flotante--*/
 .publicidad {
-  z-index: 1;
+  z-index: 2;
   top: 40px;
   position: fixed;
   right: 30px;
@@ -302,6 +298,7 @@ form textarea {
   height: 200px;
 }
 
+/* ----- fin --- */
 /* -------------footer ---------------*/
 @media (max-width: 768px) {
   .pieDepagina {
@@ -364,15 +361,34 @@ footer .infocontactos a img {
 
 /* ------- fin ----- */
 /* ----CONTACTOS---- */
-.h1contacto {
-  font-size: 40px;
+.h1contactos {
+  color: chocolate;
+  font-size: 70px;
   text-align: center;
   background-color: rgba(250, 234, 6, 0.829);
+}
+
+.h2contactos {
+  text-align: center;
+  background-color: #e89b02;
+  font-size: 20px;
+}
+
+.h3contactos {
+  text-align: center;
+  background-color: #e89b02;
+  font-size: 20px;
 }
 
 .publicidadtarjeta {
   display: flex;
   justify-content: space-around;
+}
+
+.cardpubli {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 550px) {
