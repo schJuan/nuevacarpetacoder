@@ -1,1 +1,29 @@
 $bg-color: #ae1010;
+/*
+body{
+    display: grid;
+    grid-template-columns: 6% ;
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: "nav header header header"
+                         "nav carrucel   carrucel   carrucel"
+                         "nav main   main   main"
+                         "nav main   main   main"
+                         "nav main   main   main"
+                         "footer footer footer footer ";
+}
+nav{
+    grid-area: nav;
+}
+header{
+    grid-area: header;
+}
+.carrucel{
+    grid-area: carrucel;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+*/

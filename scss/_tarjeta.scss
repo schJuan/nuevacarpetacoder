@@ -1,0 +1,41 @@
+.tarjeta{
+    width: 230px;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: 0.2s;
+    &:hover{
+      width: 240px;
+      box-shadow: 5px 5px 20px 5px #000000;
+      }
+      .burguer1{
+          width: 100%;
+          height: 200px; 
+          border-radius: 5px;
+          background-size: cover;
+      }
+      .burguer2{
+          width: 100%;
+          height: 200px;
+          border-radius: 5px;
+          background-size: cover;
+      }
+      .boton{
+          margin: 5px;
+          padding: 2px;
+          border-radius: 5px;
+          background-color: rgb(255, 167, 3);
+          transition: 0.5s;
+          &:hover{
+              background-color: coral;
+              width: 80px;
+          }
+          a{
+              list-style: none;
+              text-decoration: none;
+             color: black;
+          }
+         }
+  }

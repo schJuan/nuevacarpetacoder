@@ -1,3 +1,31 @@
+/*
+body{
+    display: grid;
+    grid-template-columns: 6% ;
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: "nav header header header"
+                         "nav carrucel   carrucel   carrucel"
+                         "nav main   main   main"
+                         "nav main   main   main"
+                         "nav main   main   main"
+                         "footer footer footer footer ";
+}
+nav{
+    grid-area: nav;
+}
+header{
+    grid-area: header;
+}
+.carrucel{
+    grid-area: carrucel;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+*/
 @import url("https://fonts.googleapis.com/css2? family= Roboto:wght@300;900 & display=swap");
 .publicidad {
   z-index: 1;
@@ -5,30 +33,6 @@
   position: fixed;
   right: 30px;
   text-align: center;
-}
-
-/* -----header y nav----*/
-* {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.titulo h1 {
-  width: 100%;
-  color: chocolate;
-  font-size: 60px;
-  text-align: center;
-  padding: 15px;
-  background-color: rgba(250, 234, 6, 0.829);
-  box-shadow: 5px 5px 15px 5px #000000;
-}
-
-.titulo h2 {
-  font-size: 40px;
-  text-align: center;
-  background-color: rgba(250, 234, 6, 0.829);
 }
 
 nav {
@@ -88,13 +92,13 @@ nav ul a {
     left: 0;
   }
 }
-/*------ fin -----*/
-/* ------- tarjeta incio-----*/
-.inicio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 
 .tarjeta {
   width: 230px;
@@ -138,6 +142,66 @@ nav ul a {
   color: black;
 }
 
+footer {
+  background-color: rgb(255, 167, 3);
+  margin: 10px 0px 0px 0px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+footer .infocontactos a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.whatsapp {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 18px 5px 23px 9px #000000;
+}
+.whatsapp img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+/* -----header y nav----*/
+.titulo h1 {
+  width: 100%;
+  color: chocolate;
+  font-size: 60px;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(250, 234, 6, 0.829);
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.titulo h2 {
+  font-size: 40px;
+  text-align: center;
+  background-color: rgba(250, 234, 6, 0.829);
+}
+
+/*------ fin -----*/
+/* ------- tarjeta incio-----*/
+.inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 /*----- finn -------*/
 /* --------------- tarjeta pedidos ------------*/
 .tituloPedido {
@@ -160,34 +224,81 @@ nav ul a {
   font-size: 20px;
 }
 
-/*
-body{
-    display: grid;
-    grid-template-columns: 6% ;
-    grid-template-rows: repeat(6,auto);
-    grid-template-areas: "nav header header header"
-                         "nav carrucel   carrucel   carrucel"
-                         "nav main   main   main"
-                         "nav main   main   main"
-                         "nav main   main   main"
-                         "footer footer footer footer ";
+formulario input {
+  width: 100%;
+  padding: 5px;
 }
-nav{
-    grid-area: nav;
+formulario input label {
+  width: 100%;
+  padding: 5px;
 }
-header{
-    grid-area: header;
+formulario input textarea {
+  width: 100%;
+  padding: 5px;
 }
-.carrucel{
-    grid-area: carrucel;
+
+.contenedor {
+  grid-template-columns: repeat(2 576px);
 }
-main{
-    grid-area: main;
+.contenedor .horarios {
+  margin: 10px;
+  padding: 15px;
+  border-color: #000000;
 }
-footer{
-    grid-area: footer;
+.contenedor .horarios th {
+  width: 100px;
+  border: 2px solid;
 }
-*/
+.contenedor .horarios td {
+  width: 100px;
+  border: 2px solid;
+}
+
+@media (max-width: 600px) {
+  .mapa {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 452px) {
+  .tituloPedido {
+    font-size: 40px;
+  }
+  .tituloPedido2 {
+    font-size: 30px;
+  }
+  .tituloPedido3 {
+    font-size: 5px;
+  }
+  .contenedor {
+    overflow: scroll;
+  }
+}
+form {
+  width: auto;
+  border: 2px solid;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+form button {
+  margin: 5px;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: rgb(255, 167, 3);
+}
+form input {
+  border: 0px;
+  border-bottom: 2px solid;
+  margin: 10px;
+  padding: 2px;
+}
+form textarea {
+  border: 0px;
+  border-bottom: 2px solid;
+  margin: 2px;
+}
+
 .formulario input {
   width: 100%;
   padding: 5px;
@@ -263,6 +374,8 @@ form textarea {
   margin: 2px;
 }
 
+/*----- fin ----- */
+/* ----carrucel--- */
 .carrucel {
   width: auto;
   height: 600px;
@@ -279,6 +392,7 @@ form textarea {
   color: white;
 }
 
+/* ---- fin ----*/
 /*--publicidad flotante--*/
 .publicidad {
   z-index: 2;
@@ -324,41 +438,6 @@ form textarea {
     border-radius: 50%;
   }
 }
-footer {
-  background-color: rgb(255, 167, 3);
-  margin: 10px 0px 0px 0px;
-  padding: 50px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  text-align: center;
-}
-
-footer .infocontactos a img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.whatsapp {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #25D366;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  box-shadow: 18px 5px 23px 9px #000000;
-}
-.whatsapp img {
-  width: 70px;
-  border-radius: 50%;
-}
-
 /* ------- fin ----- */
 /* ----CONTACTOS---- */
 .h1contactos {
