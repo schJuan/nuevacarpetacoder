@@ -55,3 +55,40 @@ nav ul {
         left: 0;
     }
 }
+.carrucel{
+    width: auto;
+   height: 600px;
+   padding: 20px;
+   img{
+    height: 550px;
+    background-size: cover;
+    }
+    h5{
+    color: white;
+    }
+    p{
+        color: white;
+    }
+}
+.titulo h1{
+    width: 100%;
+    color: chocolate;
+    font-size: 60px;
+    text-align: center;
+    padding: 15px;
+    background-color:rgba(250, 234, 6, 0.829);
+    box-shadow: 5px 5px 15px 5px #000000;
+} 
+.titulo h2{
+    font-size: 40px;
+    text-align: center;
+    background-color:rgba(250, 234, 6, 0.829);
+}
+/* ------- tarjeta incio-----*/
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*----- finn -------*/

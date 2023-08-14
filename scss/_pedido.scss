@@ -1,0 +1,176 @@
+/* --------------- tarjeta pedidos ------------*/
+.tituloPedido{
+    color: chocolate;
+    font-size: 70px;
+    text-align: center;
+    padding: 15px;
+    background-color:rgba(250, 234, 6, 0.829);
+    
+}
+.tituloPedido2{
+    font-size: 50px;
+    text-align: center;   
+    background-color:rgba(250, 234, 6, 0.829);
+}
+.tituloPedido3{
+    text-align: center;
+    background-color: #e89b02;
+    font-size: 20px; 
+}
+formulario input{
+    width: 100%;
+    padding: 5px;
+    label{
+        width: 100%;
+        padding: 5px;
+    }
+    textarea{
+        width: 100%;
+        padding: 5px;
+    }
+}
+ 
+.contenedor{
+    grid-template-columns:repeat(2 576px);
+    .horarios{
+        margin: 10px;
+        padding: 15px;
+        border-color: #000000;
+        th{
+            width: 100px;
+            border: 2px solid;
+        }
+        td{
+            width: 100px;
+            border: 2px solid;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .mapa{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width:452px){
+    .tituloPedido{
+        font-size: 40px;
+    }
+    .tituloPedido2{
+        font-size: 30px;
+    }
+    .tituloPedido3{
+        font-size: 5px;
+    }
+    .contenedor{ 
+        overflow: scroll;
+    }
+}
+
+
+form{
+    background-color: white;
+    width:auto;
+  border: 2px solid;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  button{
+    margin: 5px;
+ padding: 2px;
+ border-radius: 5px;
+ background-color: rgb(255, 167, 3);
+ }
+ input{
+    border: 0px;
+    border-bottom: 2px solid;
+    margin: 10px;
+    padding: 2px;
+ }
+ textarea{
+    border: 0px;
+    border-bottom: 2px solid;
+    margin: 2px;
+}
+}
+
+.formulario input{
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    label{
+        width: 100%;
+        padding: 5px;
+    }
+    textarea{
+        width: 100%;
+        padding: 5px;
+    }
+}
+ 
+.contenedor{
+    background-color: white;
+    grid-template-columns:repeat(2 576px);
+    .horarios{
+        margin: 10px;
+        padding: 15px;
+        border-color: #000000;
+        th{
+            width: 100px;
+            border: 2px solid;
+        }
+        td{
+            width: 100px;
+            border: 2px solid;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .mapa{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width:452px){
+    .tituloPedido{
+        font-size: 40px;
+    }
+    .tituloPedido2{
+        font-size: 30px;
+    }
+    .tituloPedido3{
+        font-size: 5px;
+    }
+    .contenedor{ 
+        overflow: scroll;
+    }
+}
+
+
+form{
+    width:auto;
+  border: 2px solid;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  button{
+    margin: 5px;
+ padding: 2px;
+ border-radius: 5px;
+ background-color: rgb(255, 167, 3);
+ }
+ input{
+    border: 0px;
+    border-bottom: 2px solid;
+    margin: 10px;
+    padding: 2px;
+ }
+ textarea{
+    border: 0px;
+    border-bottom: 2px solid;
+    margin: 2px;
+}
+}
+/*----- fin ----- */
