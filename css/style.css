@@ -509,6 +509,7 @@ footer .infocontactos a img {
 }
 .imagenesus {
   display: grid;
+  flex-wrap: wrap;
   margin: 10px;
   gap: 10px;
   grid-template-columns: repeat(4, 25%);
@@ -577,5 +578,66 @@ footer .infocontactos a img {
   width: 100%;
   height: 100%;
 }
+
+.imagenesus .img1 {
+  transition: 0.5s;
+}
+.imagenesus .img1:hover {
+  transform: translate(10px, 20px);
+}
+.imagenesus .img2 {
+  transition: 0.7s;
+}
+.imagenesus .img2:hover {
+  transform: rotateX(360deg) scale(0.3);
+}
+.imagenesus .img3 {
+  transition: 0.7s;
+}
+.imagenesus .img3:hover {
+  transform: rotateZ(360deg);
+}
+.imagenesus .img4 {
+  transition: 0.7;
+}
+.imagenesus .img4:hover {
+  transform: scale(1.5);
+}
+.imagenesus .img5 {
+  transition: 0.5s;
+}
+.imagenesus .img5:hover {
+  transform: skewX(30deg);
+}
+.imagenesus .img6 {
+  transition: 0.5s;
+}
+.imagenesus .img6:hover {
+  transform: skewY(30deg);
+}
+.imagenesus .img7 {
+  transition: 0.5s;
+}
+.imagenesus .img7:hover {
+  transform: rotateY(360deg) scale(0.5);
+}
+.imagenesus .img10 {
+  transition: 0.5s;
+}
+.imagenesus .img10:hover {
+  transform: translate(20px, -20px) scale(0.5);
+}
+
+/*
+
+    .img8[
+        animation-name:movi;
+        animation-duration:10s;
+        animation-delay: 3s;
+        animacion-interation-count: infinite;
+    ]
+
+
+    */
 
 /*# sourceMappingURL=style.css.map */

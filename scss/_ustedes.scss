@@ -1,7 +1,7 @@
 
 .imagenesus{
     display: grid;
-    
+    flex-wrap: wrap;
     margin: 10px;
     gap: 10px;
     grid-template-columns:repeat(4, 25%) ;
@@ -15,9 +15,6 @@
                          "img8 img8 img7 img7"
                          "img8 img8 img9 img9";
 }
-
-
-
 
 .img1{
     grid-area: img1;
@@ -73,3 +70,66 @@
     width: 100%;
     height: 100%;
 }
+
+.imagenesus{
+    .img1{
+        transition: 0.5s;
+        &:hover{
+            transform: translate(10px,20px);
+        }
+    }
+    .img2{
+        transition: 0.7s;
+        &:hover{
+            transform: rotateX(360deg) scale(0.30);
+        }
+    }
+    .img3{
+        transition: 0.7s;
+        &:hover{
+            transform: rotateZ(360deg);
+        }
+    }
+    .img4{
+        transition: 0.7;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    .img5{
+        transition: 0.5s;
+        &:hover{
+            transform: skewX(30deg)
+        }
+    }
+    .img6{
+        transition: 0.5s;
+        &:hover{
+            transform: skewY(30deg)
+        }
+    }
+    .img7{
+        transition: 0.5s;
+        &:hover{
+            transform: rotateY(360deg) scale(0.5);
+        }
+    }
+    
+    .img10{
+        transition: 0.5s;
+        &:hover{
+            transform: translate(20px,-20px) scale(0.5);
+        }
+    }
+}
+/*
+ 
+    .img8[
+        animation-name:movi;
+        animation-duration:10s;
+        animation-delay: 3s;
+        animacion-interation-count: infinite;
+    ]
+    
+    
+    */
