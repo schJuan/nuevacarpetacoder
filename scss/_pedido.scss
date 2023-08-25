@@ -46,7 +46,9 @@ formulario input{
         }
     }
 }
-
+.mapa{
+    margin: 10px;
+}
 @media(max-width:600px){
     .mapa{
         width: 300px;
@@ -119,10 +121,12 @@ form{
         th{
             width: 100px;
             border: 2px solid;
+            margin:  5px;
         }
         td{
             width: 100px;
             border: 2px solid;
+            margin:  5px;
         }
     }
 }

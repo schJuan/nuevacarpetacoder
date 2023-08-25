@@ -289,6 +289,10 @@ formulario input textarea {
   border: 2px solid;
 }
 
+.mapa {
+  margin: 10px;
+}
+
 @media (max-width: 600px) {
   .mapa {
     width: 300px;
@@ -361,10 +365,12 @@ form textarea {
 .contenedor .horarios th {
   width: 100px;
   border: 2px solid;
+  margin: 5px;
 }
 .contenedor .horarios td {
   width: 100px;
   border: 2px solid;
+  margin: 5px;
 }
 
 @media (max-width: 600px) {
@@ -454,6 +460,11 @@ form textarea {
   list-style: none;
   text-decoration: none;
   color: black;
+}
+
+.tt {
+  margin: 5px;
+  background-color: burlywood;
 }
 
 footer {
