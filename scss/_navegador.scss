@@ -3,7 +3,7 @@ nav{
     display: flex;
     justify-content: space-between; 
     .logo{
-        /*width: 100%;*/
+        width: 70px;
         height: 70px;
         object-fit: cover;
         box-shadow: 5px 5px 15px 5px #000000;
@@ -75,14 +75,14 @@ nav ul {
 .titulo h1{
     width: 100%;
     color: chocolate;
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     padding: 15px;
     background-color:rgba(250, 234, 6, 0.829);
     box-shadow: 5px 5px 15px 5px #000000;
 } 
 .titulo h2{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     background-color:rgba(250, 234, 6, 0.829);
 }

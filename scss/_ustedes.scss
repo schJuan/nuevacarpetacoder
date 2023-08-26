@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     margin: 10px;
     gap: 10px;
-    grid-template-columns:repeat(4, 25%) ;
+    grid-template-columns:repeat(4, auto) ;
     grid-template-rows: repeat(8, 200px);
     grid-template-areas: "img10 img10 img2 img2"
                          "img1 img1 img3 img3"
@@ -24,7 +24,7 @@
 }
 .img2{
     grid-area: img2;
-    width: 100%;
+    width:100%;
     height: 100%;
     object-fit: cover;
 }
@@ -120,6 +120,21 @@
         &:hover{
             transform: translate(20px,-20px) scale(0.5);
         }
+    }
+}
+@media(max-width:230px){
+    .tituloPedido{
+        color: chocolate;
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+        background-color:rgba(250, 234, 6, 0.829);
+        
+    }
+    .tituloPedido2{
+        font-size: 20px;
+        text-align: center;   
+        background-color:rgba(250, 234, 6, 0.829);
     }
 }
 /*
