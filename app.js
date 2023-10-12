@@ -1,4 +1,4 @@
-let nombreUsuario = prompt ("Ingrese su nombre")
+/*let nombreUsuario = prompt ("Ingrese su nombre")
 
 let apellido = prompt ("Ingrese su apellido")
 let hamburguesa1 = "Burguer clasica" 
@@ -43,4 +43,39 @@ switch (pedido) {
         alert(`${nombreUsuario} su pedido es de ${hamburguesa3} mas papas su costo es $3600`)
         break
 }
-
+*/
+//[]
+/*const carrito = []
+carrito.push("primer producto")
+carrito.push("segundo producto")
+console.log (carrito)*/
+ //unshift agregar elementos al comienzo del array
+/*const arreglo = ["primero", 2, false]
+arreglo.unshift ("otro elemento")
+console.log(arrego)*/
+/*function sumar (a, b){
+    return a + b
+}
+function sumar(a, b) {
+    return a + b
+}
+function restar(a, b) {
+    return a - b
+}
+function multiplicar(a, b) {
+    return a * b
+}
+function dividir(a, b) {
+    return a / b
+}
+console.log(multiplicar(2, 3))*/
+//CALLBACKS ( FUNCIONESCOMOPARAMETROS DE OTRAS FUNCIONES)
+let entrada = prompt (`Ingrese su nombre`) 
+function saludar(entrada, callback){
+    alert("saludos" + entrada + "!")
+    callback()
+ }
+ function despedir() {
+    alert (`Hasta luego ${entrada}`)
+ }
+ saludar (`${entrada}`, despedir)
