@@ -1,81 +1,99 @@
-/*let nombreUsuario = prompt ("Ingrese su nombre")
 
-let apellido = prompt ("Ingrese su apellido")
-let hamburguesa1 = "Burguer clasica" 
-let hamburguesa2 = "Triple queso"
-let hamburguesa3 = "Musk burguer"
+//COMIENZO DE ENTREGA
+const hamburguesa1 = {
+    nombre: "Burguer clasica",
+    precio: 1000
+}
+const hamburguesa2 = {
+    nombre: "triple queso",
+    precio: 2000
+}
+const hamburguesa3 = {
+    nombre: "Musk burguer",
+    precio: 3000
+}
+const papas1 = {
+    nombre: "papas clasicas",
+    precio: 1000
+}
+const papas2 = {
+    nombre: "papas explosiva",
+    precio: 2000
+}
+const papas3 = {
+    nombre: "papas con chedar",
+    precio: 3000
+}
 
-let entrada = prompt (`Que desa pedir ${nombreUsuario} ${apellido}
+let nombreUsuario = prompt("Ingrese su nombre")
+
+let apellido = prompt("Ingrese su apellido")
+
+let entrada = prompt(`Que desa pedir ${nombreUsuario} ${apellido}
 1 Burguer clasica $1000
 2 Triple queso $2000
 3 Musk burguer $3000`)
 
-switch(entrada){
+const carrito = [
+]
+
+switch (entrada) {
     case "1":
-        alert("Usted pidió Burguer clasica")
+        carrito.push(hamburguesa1)
         break
     case "2":
-        alert("Usted pidió Triple queso")
+        carrito.push(hamburguesa2)
         break
     case "3":
-        alert("Usted pidió Musk Burguer")
+        carrito.push(hamburguesa3)
         break
-    default:
-        alert("No entendi el mensaje, intente de nuevo")
+}
+papas = prompt(`Que desa pedir ${nombreUsuario} ${apellido}
+        1 papas clasicas $1000
+        2 papas explosivas $2000
+        3 papas con chedar $3000
+        "No" para no pedir papas`)
+
+while (papas != "1" && papas != "2" && papas != "3" && papas != "No") {
+    papas = prompt(`Que desa pedir ${nombreUsuario} ${apellido}
+        1 papas clasicas $1000
+        2 papas explosivas $2000
+        3 papas con chedar $3000
+        "No" para no pedir papas`)
+}
+
+switch(papas){
+    case "1":
+        carrito.push(papas1)
+        break
+    case "2":
+        carrito.push(papas2)
+        break
+    case "3":
+        carrito.push(papas3) 
+       break  
+    case "No":
+}
+let quitarPedido = prompt (`Que deseas sacar ${nombreUsuario}   
+    1 hamburguesa
+    2 papas
+    3 confirmar pedido`)
+switch(quitarPedido){
+    case "1":
+        carrito.shift()
+        break
+    case "2":
+        carrito.pop()
+        break
+    case "3":
         break
 }
 
-papas = prompt(`¿Desea agregar papas por $600? responda "Si" o "No"`)
 
-while (papas != "Si" && papas != "No"){
-    papas = prompt(`¿Desea agregar papas por $600? responda "Si" o "No"`)
-}
-let pedido = (`${entrada} ${papas}`)
+let resultado = carrito.reduce((accum, p) =>{
+    return accum + p.precio
+}, 0)
+alert(`${nombreUsuario}` + " su compra es de: " + resultado)
 
-switch (pedido) {
-    case "1 Si":
-        alert(`${nombreUsuario} su pedido es de ${hamburguesa1} mas papas su costo es $1600`)
-        break
-    case "2 Si":
-        alert(`${nombreUsuario} su pedido es de ${hamburguesa2} mas papas su costo es $2600`)
-        break
-    case "3 Si":
-        alert(`${nombreUsuario} su pedido es de ${hamburguesa3} mas papas su costo es $3600`)
-        break
-}
-*/
-//[]
-/*const carrito = []
-carrito.push("primer producto")
-carrito.push("segundo producto")
-console.log (carrito)*/
- //unshift agregar elementos al comienzo del array
-/*const arreglo = ["primero", 2, false]
-arreglo.unshift ("otro elemento")
-console.log(arrego)*/
-/*function sumar (a, b){
-    return a + b
-}
-function sumar(a, b) {
-    return a + b
-}
-function restar(a, b) {
-    return a - b
-}
-function multiplicar(a, b) {
-    return a * b
-}
-function dividir(a, b) {
-    return a / b
-}
-console.log(multiplicar(2, 3))*/
-//CALLBACKS ( FUNCIONESCOMOPARAMETROS DE OTRAS FUNCIONES)
-let entrada = prompt (`Ingrese su nombre`) 
-function saludar(entrada, callback){
-    alert("saludos" + entrada + "!")
-    callback()
- }
- function despedir() {
-    alert (`Hasta luego ${entrada}`)
- }
- saludar (`${entrada}`, despedir)
+
+//FIN DE ENTREGA
