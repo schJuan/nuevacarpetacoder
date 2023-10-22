@@ -1,5 +1,5 @@
 
-//COMIENZO DE ENTREGA
+/*//COMIENZO DE ENTREGA
 const hamburguesa1 = {
     nombre: "Burguer clasica",
     precio: 1000
@@ -96,4 +96,10 @@ let resultado = carrito.reduce((accum, p) =>{
 alert(`${nombreUsuario}` + " su compra es de: " + resultado)
 
 
-//FIN DE ENTREGA
+//FIN DE ENTREGA*/
+/*let documento
+documento = document
+console.log(documento)*/
+/*const navbar = document.getElementsByClassName("tarjeta")
+console.log(navbar)*/
+const titulo = document.querySelector("h1").textContent = "Nuevo titulo prueba"
