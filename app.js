@@ -25,81 +25,115 @@ const papas3 = {
     precio: 3000
 }
 
-let nombreUsuario = prompt("Ingrese su nombre")
 
-let apellido = prompt("Ingrese su apellido")
 
-let entrada = prompt(`Que desa pedir ${nombreUsuario} ${apellido}
-1 Burguer clasica $1000
-2 Triple queso $2000
-3 Musk burguer $3000`)
-
-const carrito = [
-]
-
-switch (entrada) {
-    case "1":
-        carrito.push(hamburguesa1)
-        break
-    case "2":
-        carrito.push(hamburguesa2)
-        break
-    case "3":
-        carrito.push(hamburguesa3)
-        break
-}
-papas = prompt(`Que desa pedir ${nombreUsuario} ${apellido}
-        1 papas clasicas $1000
-        2 papas explosivas $2000
-        3 papas con chedar $3000
-        "No" para no pedir papas`)
-
-while (papas != "1" && papas != "2" && papas != "3" && papas != "No") {
-    papas = prompt(`Que desa pedir ${nombreUsuario} ${apellido}
-        1 papas clasicas $1000
-        2 papas explosivas $2000
-        3 papas con chedar $3000
-        "No" para no pedir papas`)
-}
-
-switch(papas){
-    case "1":
-        carrito.push(papas1)
-        break
-    case "2":
-        carrito.push(papas2)
-        break
-    case "3":
-        carrito.push(papas3) 
-       break  
-    case "No":
-}
-let quitarPedido = prompt (`Que deseas sacar ${nombreUsuario}   
-    1 hamburguesa
-    2 papas
-    3 confirmar pedido`)
-switch(quitarPedido){
-    case "1":
-        carrito.shift()
-        break
-    case "2":
-        carrito.pop()
-        break
-    case "3":
-        break
-}
 
 
 let resultado = carrito.reduce((accum, p) =>{
     return accum + p.precio
-}, 0)
-alert(`${nombreUsuario}` + " su compra es de: " + resultado)
+}, 0)*/
 
+const containerCartProducts = document.querySelector(
+    '.tarjeta'
+)
+btnCart.addEventListener('click', () => {
+    containerCartProducts.classList.toggle('hidden-card');
+});
+const productsList = document.querySelector(`.inicio`)
+let carrito = []
+const valorTotal = document.querySelector(`.total-pagar`)
+const boton = document.querySelector(".boton")
 
+const cartTotal = document.querySelector('.cart-total');
+const countProducts = document.querySelector('#contador-productos')
+
+productsList.addEventListener("click",e => {
+    if(e.target.classList.contains(boton)){
+        const product = e.target.parenElement
+        const infoProdct = {
+            quantity: 1,
+            title: product.querySelector(`h2`).textContent,
+            price: product.querySelector(`p`).textContent
+        }
+
+        const exits = carrito.some(
+            product => product.title === infoProdct.title
+        )
+
+        if (exits){
+            const product = carrito.map(product =>{
+                if (product.title === infoProdct.title){
+                    product.quantity++;
+                    return product
+                }else{
+                    return product
+                }
+            })
+            allProducts = [...product]
+        }else{
+            carrito = [...carrito. infoProdct]
+        }
+        showHTML()
+    }
+})
+
+rowProduct.addEventListener('click', e => {
+    if (e.target.classList.contains(".icon-close")) {
+        const product = e.target.parentElement;
+        const title = product.querySelector('p').textContent;
+
+        carrito = carrito.filter(
+            product => product.title !== title
+        );
+
+        console.log(carrito);
+
+        showHTML();
+    }
+});
+const showHTML = () => {
+    if (!allProducts.length) {
+        cartEmpty.classList.remove('hidden');
+        rowProduct.classList.add('hidden');
+        cartTotal.classList.add('hidden');
+    } else {
+        cartEmpty.classList.add('hidden');
+        rowProduct.classList.remove('hidden');
+        cartTotal.classList.remove('hidden');
+    }
+    rowProduct.innerHTML = ''
+    let total = 0;
+    let totalOfProducts = 0
+    carrito.forEach(product => {
+        const containerProduct = document.createElement('div');
+        containerProduct.classList.add('cart-product');
+
+        containerProduct.innerHTML = `
+            <div class="tarjeta">
+                <span >${product.quantity}</span>
+                <p>${product.title}</p>
+                <span>${product.price}</span>
+            </div>
+        `;
+
+        rowProduct.append(containerProduct);
+
+        total =
+            total + parseInt(product.quantity * product.price.slice(1));
+        totalOfProducts = totalOfProducts + product.quantity;
+    });
+
+    valorTotal.innerText = `$${total}`;
+    countProducts.innerText = totalOfProducts;
+}
+ocument.addEventListener('DOMContentLoaded', () => {
+    carrito = [];
+    showHTML();
+
+    const storedProducts = JSON.parse(localStorage.getItem('products'));
+    if (storedProducts) {
+        carrito = storedProducts;
+        showHTML();
+    }
+});
 //FIN DE ENTREGA*/
-/*let documento
-documento = document
-console.log(documento)*/
-/*const navbar = document.getElementsByClassName("tarjeta")
-console.log(navbar)*/
-const titulo = document.querySelector("h1").textContent = "Nuevo titulo prueba"
